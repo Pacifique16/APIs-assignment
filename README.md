@@ -71,14 +71,22 @@ images/ (Test Screenshots)
   }
 ]
 ```
+<img width="1062" height="645" alt="Q1_GetAllBooks" src="https://github.com/user-attachments/assets/b751ba7a-e284-45dc-993b-fbeaa319feaf" />
+
 
 #### 2. Get Book by ID
 - **URL:** `GET http://localhost:8080/api/books/1`
 - **Response:** 200 OK or 404 Not Found
 
+<img width="1381" height="732" alt="Q1_GetBookById" src="https://github.com/user-attachments/assets/61c299b5-ec18-434a-8e47-f7e3d3dff5e0" />
+
+
 #### 3. Search Books by Title
 - **URL:** `GET http://localhost:8080/api/books/search?title=clean`
 - **Response:** 200 OK
+
+<img width="1378" height="603" alt="Q1_SearchBooks" src="https://github.com/user-attachments/assets/8bac4907-62db-4449-b851-38e8a43e1968" />
+
 
 #### 4. Add New Book
 - **URL:** `POST http://localhost:8080/api/books`
@@ -92,11 +100,16 @@ images/ (Test Screenshots)
   "publicationYear": 1994
 }
 ```
+<img width="1375" height="716" alt="Q1_AddBook" src="https://github.com/user-attachments/assets/4d9b19dd-b634-4c6b-a83a-98dfe65ec9ec" />
+
+
 - **Response:** 201 Created
 
 #### 5. Delete Book
 - **URL:** `DELETE http://localhost:8080/api/books/1`
 - **Response:** 204 No Content or 404 Not Found
+
+<img width="1377" height="642" alt="Q1_DeleteBook" src="https://github.com/user-attachments/assets/23bb773e-f849-4cb5-af5d-54dbb5ecc18e" />
 
 ---
 
@@ -108,6 +121,8 @@ images/ (Test Screenshots)
 - **URL:** `GET http://localhost:8080/api/students`
 - **Response:** 200 OK
 
+<img width="1381" height="757" alt="`Q2_GetAllStudents" src="https://github.com/user-attachments/assets/aad2ed90-8098-43b1-b15c-01e0b336aa09" />
+
 #### 2. Get Student by ID
 - **URL:** `GET http://localhost:8080/api/students/1`
 - **Response:** 200 OK or 404 Not Found
@@ -115,10 +130,14 @@ images/ (Test Screenshots)
 #### 3. Get Students by Major
 - **URL:** `GET http://localhost:8080/api/students/major/Computer Science`
 - **Response:** 200 OK
+  
+<img width="1378" height="673" alt="Q2_GetByMajor" src="https://github.com/user-attachments/assets/a8b6ca0f-787f-4147-9f1f-7002f35516aa" />
 
 #### 4. Filter Students by GPA
 - **URL:** `GET http://localhost:8080/api/students/filter?gpa=3.5`
 - **Response:** 200 OK
+  
+<img width="1367" height="680" alt="Q2_FilterByGPA" src="https://github.com/user-attachments/assets/eb19b68f-d297-4bfb-b715-ac84ca4bccf1" />
 
 #### 5. Register New Student
 - **URL:** `POST http://localhost:8080/api/students`
@@ -133,6 +152,9 @@ images/ (Test Screenshots)
   "gpa": 3.7
 }
 ```
+
+<img width="1380" height="738" alt="Q2_RegisterStudent" src="https://github.com/user-attachments/assets/d485f398-f687-480d-a5f3-ffcb1c9266fa" />
+
 - **Response:** 201 Created
 
 #### 6. Update Student
@@ -159,6 +181,8 @@ images/ (Test Screenshots)
 #### 1. Get All Menu Items
 - **URL:** `GET http://localhost:8080/api/menu`
 - **Response:** 200 OK
+  
+<img width="1371" height="875" alt="Q3_GetAllMenuItems" src="https://github.com/user-attachments/assets/fe720e98-be2c-406d-8678-c58a8dbcf38d" />
 
 #### 2. Get Menu Item by ID
 - **URL:** `GET http://localhost:8080/api/menu/1`
@@ -167,10 +191,14 @@ images/ (Test Screenshots)
 #### 3. Get Items by Category
 - **URL:** `GET http://localhost:8080/api/menu/category/Main Course`
 - **Response:** 200 OK
+  
+<img width="1361" height="667" alt="`Q3_GetByCategory" src="https://github.com/user-attachments/assets/00c7b964-e9a8-4762-9c89-f03cb99b84bc" />
 
 #### 4. Get Available Items
 - **URL:** `GET http://localhost:8080/api/menu/available?available=true`
 - **Response:** 200 OK
+  
+<img width="1377" height="833" alt="Q3_GetAvailable" src="https://github.com/user-attachments/assets/58abdd78-2fdc-4d1b-9370-59324e1086a2" />
 
 #### 5. Search Menu Items by Name
 - **URL:** `GET http://localhost:8080/api/menu/search?name=chicken`
@@ -209,6 +237,8 @@ images/ (Test Screenshots)
 - **URL:** `GET http://localhost:8080/api/products`
 - **URL with pagination:** `GET http://localhost:8080/api/products?page=0&limit=5`
 - **Response:** 200 OK
+  
+<img width="1370" height="857" alt="Q4_GetAllProducts" src="https://github.com/user-attachments/assets/716daddf-e1a4-4cd8-ac70-328faaf6ca8d" />
 
 #### 2. Get Product by ID
 - **URL:** `GET http://localhost:8080/api/products/1`
@@ -225,14 +255,20 @@ images/ (Test Screenshots)
 #### 5. Search Products by Keyword
 - **URL:** `GET http://localhost:8080/api/products/search?keyword=phone`
 - **Response:** 200 OK
+  
+<img width="1367" height="635" alt="Q4_SearchProducts" src="https://github.com/user-attachments/assets/9f5baf08-f2c2-477b-b562-50abc99b060a" />
 
 #### 6. Get Products by Price Range
 - **URL:** `GET http://localhost:8080/api/products/price-range?min=100&max=500`
 - **Response:** 200 OK
+  
+<img width="1367" height="677" alt="`Q4_PriceRange" src="https://github.com/user-attachments/assets/31287534-bc47-4759-8b3e-cc7c721a1642" />
 
 #### 7. Get In-Stock Products
 - **URL:** `GET http://localhost:8080/api/products/in-stock`
 - **Response:** 200 OK
+  
+<img width="1377" height="841" alt="Q4_InStock" src="https://github.com/user-attachments/assets/d3ec8b5c-2405-45ba-ba18-0041bad64e6a" />
 
 #### 8. Add New Product
 - **URL:** `POST http://localhost:8080/api/products`
@@ -277,14 +313,20 @@ images/ (Test Screenshots)
 #### 2. Get Task by ID
 - **URL:** `GET http://localhost:8080/api/tasks/1`
 - **Response:** 200 OK or 404 Not Found
+  
+<img width="1368" height="687" alt="Q5_GetAllTasks" src="https://github.com/user-attachments/assets/40a7bb76-2e7f-4594-8cea-1388e725f816" />
 
 #### 3. Get Tasks by Status
 - **URL:** `GET http://localhost:8080/api/tasks/status?completed=false`
 - **Response:** 200 OK
+  
+<img width="1372" height="642" alt="Q5_GetByStatus" src="https://github.com/user-attachments/assets/3598f938-7534-4793-b8c3-951a0bcfa293" />
 
 #### 4. Get Tasks by Priority
 - **URL:** `GET http://localhost:8080/api/tasks/priority/HIGH`
 - **Response:** 200 OK
+  
+<img width="1387" height="582" alt="Q5_GetByPriority" src="https://github.com/user-attachments/assets/4c1fa7c3-5d69-4bbc-93a2-126bb1ea842e" />
 
 #### 5. Create New Task
 - **URL:** `POST http://localhost:8080/api/tasks`
@@ -310,6 +352,8 @@ images/ (Test Screenshots)
 #### 7. Mark Task as Completed
 - **URL:** `PATCH http://localhost:8080/api/tasks/1/complete`
 - **Response:** 200 OK or 404 Not Found
+  
+<img width="1375" height="668" alt="Q5_MarkCompleted" src="https://github.com/user-attachments/assets/ca1cecb6-8d00-4cd3-93fc-c961fa2df57c" />
 
 #### 8. Delete Task
 - **URL:** `DELETE http://localhost:8080/api/tasks/1`
@@ -331,6 +375,7 @@ images/ (Test Screenshots)
   "data": [...]
 }
 ```
+<img width="1035" height="845" alt="Bonus_GetAllUsers" src="https://github.com/user-attachments/assets/7913d53b-e287-4b17-89c4-96abc2f473e9" />
 
 #### 2. Get User by ID
 - **URL:** `GET http://localhost:8080/api/users/1`
@@ -343,10 +388,14 @@ images/ (Test Screenshots)
 #### 4. Get Users by Country
 - **URL:** `GET http://localhost:8080/api/users/country/USA`
 - **Response:** 200 OK
+  
+<img width="1047" height="730" alt="Bonus_GetByCountry" src="https://github.com/user-attachments/assets/070d3e8f-7474-490c-b5cc-b4f29299526b" />
 
 #### 5. Get Users by Age Range
 - **URL:** `GET http://localhost:8080/api/users/age-range?min=20&max=30`
 - **Response:** 200 OK
+  
+<img width="1025" height="815" alt="Bonus_AgeRange" src="https://github.com/user-attachments/assets/617f56c6-cf7e-4882-8085-a3a629ba2197" />
 
 #### 6. Get Active/Inactive Users
 - **URL:** `GET http://localhost:8080/api/users/active?active=true`
@@ -367,7 +416,10 @@ images/ (Test Screenshots)
   "active": true
 }
 ```
+
 - **Response:** 201 Created
+
+<img width="1033" height="872" alt="Bonus_CreateUser" src="https://github.com/user-attachments/assets/ace685d7-f877-4ecc-89ec-39841ed07257" />
 
 #### 8. Update User
 - **URL:** `PUT http://localhost:8080/api/users/1`
@@ -378,6 +430,8 @@ images/ (Test Screenshots)
 #### 9. Activate User
 - **URL:** `PATCH http://localhost:8080/api/users/1/activate`
 - **Response:** 200 OK or 404 Not Found
+  
+<img width="1042" height="817" alt="Bonus_ActivateUser" src="https://github.com/user-attachments/assets/e9324152-efa6-40c6-bf15-f9521ef48e63" />
 
 #### 10. Deactivate User
 - **URL:** `PATCH http://localhost:8080/api/users/1/deactivate`
